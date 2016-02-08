@@ -1,0 +1,18 @@
+{
+    "contents" : "# Load the readxl package\nlibrary(readxl)\n\n# Find the names of both spreadsheets: sheets\n\n\n# Print sheets\n\n\n# Find out the class of the sheets vector\n",
+    "created" : 1454842975004.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2401992396",
+    "id" : "A01672A3",
+    "lastKnownWriteTime" : 1454844882,
+    "path" : "F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Importing and Cleaning Data/readExcel.R",
+    "project_path" : "readExcel.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

@@ -1,0 +1,18 @@
+{
+    "contents" : "# The vector pioneers has already been created for you\npioneers <- c(\"GAUSS:1777\", \"BAYES:1702\", \"PASCAL:1623\", \"PEARSON:1857\")\n\n# Split names from birth year: split_math\nsplit_math = strsplit(pioneers,split = \":\")\n\n# Convert to lowercase strings: split_low\nsplit_low=lapply(split_math, tolower)\n\n# Take a look at the structure of split_low\nstr(split_low)\n\n\n\n# Code from previous exercise:\npioneers <- c(\"GAUSS:1777\", \"BAYES:1702\", \"PASCAL:1623\", \"PEARSON:1857\")\nsplit <- strsplit(pioneers, split = \":\")\nsplit_low <- lapply(split, tolower)\n\n# Write function select_first()\nselect_first = function(x){\n      return(x[1])\n}\n\n# Apply select_first() over split_low: names\nnames = lapply(split_low, select_first)\n\n# Write function select_second()\nselect_second = function(x){\n      return(x[2])\n}\n\n# Apply select_second() over split_low: years\nyears = lapply(split_low, select_second)\n\n\n\n\n# Definition of split_low\npioneers <- c(\"GAUSS:1777\", \"BAYES:1702\", \"PASCAL:1623\", \"PEARSON:1857\")\nsplit <- strsplit(pioneers, split = \":\")\nsplit_low <- lapply(split, function(x){x[1]})\nsplit_low\nnames <- lapply(split, function(x){x[2]})\nnames\n\n\n# Definition of split_low\npioneers <- c(\"GAUSS:1777\", \"BAYES:1702\", \"PASCAL:1623\", \"PEARSON:1857\")\nsplit <- strsplit(pioneers, split = \":\")\nsplit_low <- lapply(split, tolower)\n\n# Replace the select_*() functions by a single function: select_el\nselect_el = function(v, index){\n      v[index]\n}\n# Call the select_el() function twice on split_low: names and years\nnames =lapply(split_low, select_el, 1)\nyears = lapply(split_low, select_el, 2)\nnames\nyears\n",
+    "created" : 1454825552781.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1897157372",
+    "id" : "8A531CEC",
+    "lastKnownWriteTime" : 1454836894,
+    "path" : "F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Intermediate R/apply.R",
+    "project_path" : "apply.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

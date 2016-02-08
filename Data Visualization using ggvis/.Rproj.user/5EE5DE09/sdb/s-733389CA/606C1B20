@@ -1,0 +1,18 @@
+{
+    "contents" : "# Build a histogram of the waiting variable of the faithful data set.\nfaithful %>% ggvis(~waiting)%>%layer_histograms()\n\n# Build the same histogram, but with a binwidth (width argument) of 5 units\nfaithful %>% ggvis(~waiting)%>%layer_histograms(width = 5)\n\n\n\n# Transform the code below: just compute the bins instead of plotting a histogram\nfaithful %>% compute_bin(x_var = ~waiting,width = 5)\n\n# Combine the solution to the first challenge with layer_rects() to build a histogram\nfaithful %>% compute_bin(x_var = ~waiting,width=5) %>% ggvis(width = 5,x=~xmin_,x2=~xmax_,y2=~count_,y=0)%>%layer_rects()\n\n\n\n# Combine compute_density() with layer_lines() to make a density plot of the waiting variable.\nfaithful %>% compute_density(x_var=~waiting) %>% ggvis(~pred_, ~resp_) %>%layer_lines()\n\n# Build a density plot directly using layer_densities. Use the correct variables and properties.\nfaithful %>% ggvis(~waiting,fill:=\"green\") %>% layer_densities() \n\n\n\n# Complete the code to plot a bar graph of the cyl factor.\nmtcars %>% ggvis(~factor(cyl))%>% layer_bars()\n\n# Adapt the solution to the first challenge to just calculate the count values. No plotting!\nmtcars %>% compute_count(x_var=~factor(cyl))\n\n\n\n# Both ggvis and dplyr are loaded into the workspace\n\n# Change the code to plot a unique smooth line for each value of the cyl variable.\nmtcars %>% group_by(cyl) %>% ggvis(~mpg, ~wt, stroke = ~factor(cyl)) %>% layer_smooths()\n\n# Adapt the graph to contain a separate density for each value of cyl.\nmtcars %>% group_by(cyl)%>%ggvis(~mpg) %>% layer_densities()\n\n# Copy and alter the solution to the second challenge to map the fill property to a categorical version of cyl.\n\nmtcars %>% group_by(cyl)%>%ggvis(~mpg, fill=~factor(cyl)) %>% layer_densities()\n\n\n\n\n\n\n\n# Alter the graph below: separate density for each unique combination of 'cyl' and 'am'.\nmtcars %>% group_by(cyl, am) %>% ggvis(~mpg, fill = ~factor(cyl)) %>% layer_densities()\n\n# Update the graph below to map `fill` to the unique combinations of the grouping variables.\nmtcars %>% group_by(cyl, am) %>% ggvis(~mpg, fill= ~interaction(cyl,am) ) %>% layer_densities()\n",
+    "created" : 1454902355176.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2454818384",
+    "id" : "606C1B20",
+    "lastKnownWriteTime" : 1454908107,
+    "path" : "F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Data Visualization using ggvis/histograms.R",
+    "project_path" : "histograms.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

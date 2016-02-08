@@ -1,0 +1,18 @@
+{
+    "contents" : "# Load in the Quandl package with the help of library() here:\nlibrary(Quandl)\n\n# Assign your first dataset to the variable:\nmydata <- Quandl(\"NSE/OIL\")\n      \n# Your Quandl Package is already loaded in\nlibrary(Quandl)\n\n# Assign the Prague Stock Exchange to:\nPragueStockExchange <- Quandl(\"PRAGUESE/PX\")\n\n",
+    "created" : 1454419439376.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2947316353",
+    "id" : "CB5E91F3",
+    "lastKnownWriteTime" : 31244173393002613,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
