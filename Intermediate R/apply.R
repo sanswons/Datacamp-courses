@@ -59,3 +59,19 @@ names =lapply(split_low, select_el, 1)
 years = lapply(split_low, select_el, 2)
 names
 years
+
+
+
+
+# temp has already been defined in the workspace
+
+# Use lapply() to find each day's minimum temperature
+
+
+# Use sapply() to find each day's minimum temperature
+
+
+# Use lapply() to find each day's maximum temperature
+
+
+# Use sapply() to find each day's maximum temperature

@@ -1,12 +1,12 @@
 {
-    "contents" : "# Load the readxl package\nlibrary(readxl)\n\n# Find the names of both spreadsheets: sheets\n\n\n# Print sheets\n\n\n# Find out the class of the sheets vector\n",
+    "contents" : "# Load the readxl package\nlibrary(readxl)\n\n# Find the names of both spreadsheets: sheets\nsheets=excel_sheets(\"F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Importing and Cleaning Data/latitude.xlsx\")\n\n# Print sheets\nsheets\n\n# Find out the class of the sheets vector\nclass(sheets)\n\n\n\n# The readxl package is already loaded\n\n# Read the first sheet of latitude.xlsx: latitude_1\n\n\n# Read the second sheet of latitude.xlsx: latitude_2\n\n\n# Put latitude_1 and latitude_2 in a list: lat_list\n\n\n# Display the structure of lat_list\n",
     "created" : 1454842975004.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2401992396",
+    "hash" : "3737229973",
     "id" : "A01672A3",
-    "lastKnownWriteTime" : 1454844882,
+    "lastKnownWriteTime" : 1455203473,
     "path" : "F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Importing and Cleaning Data/readExcel.R",
     "project_path" : "readExcel.R",
     "properties" : {

@@ -1,0 +1,18 @@
+{
+    "contents" : "# Load in the Quandl package with the help of library() here:\nlibrary(Quandl)\n\n# Assign your first dataset to the variable:\nmydata <- Quandl(\"NSE/OIL\")\n      \n# Your Quandl Package is already loaded in\nlibrary(Quandl)\n\n# Assign the Prague Stock Exchange to:\nPragueStockExchange <- Quandl(\"PRAGUESE/PX\")\n\n# The quantmod package is ready for use:\nlibrary(quantmod)\n\n# Load the Facebook data with the help of Quandl\nFacebook=Quandl(\"GOOG/NASDAQ_FB\",type = \"xts\")\n\n# Plot the chart with the help of candleChart()\ncandleChart(Facebook)\n\n\n# Your Quandl Package is already loaded in\nlibrary(Quandl)\n\n# Look up the first 3 results for 'Bitcoin' within the Quandl database:\nresult <- Quandl.search(query = \"Bitcoin\", silent = F)\n      \n# Print out the results\nstr(result)      \n\n# Assign the data set with code BCHAIN/TOTBC\nBitCoin <- Quandl(\"BCHAIN/TOTBC\")\n\n\n\n# Load the Quandl package\nlibrary(Quandl)\n\n# Assign to the variable Exchange\nExchange <- Quandl(\"BNP/USDEUR\",start_date=\"2013-01-01\",end_date=\"2013-12-01\")\n      \n\n\n# Load the Quandl package\nlibrary(Quandl)\n\n# The result:\nGDP_Change <- Quandl(\"FRED/CANRGDPR\",transformation = \"rdiff\")\n\n\n\n# Load the Quandl package\nlibrary(Quandl)\n\n# The result:\neiaQuarterly <- Quandl(\"DOE/RWTC\",collapse = \"quarterly\")\n      \n      \n      \n      \n# Load the Quandl package\nlibrary(Quandl)\n\n# Assign to TruSo the first 5 observations of the crude oil prices\nTruSo <- Quandl(\"DOE/RWTC\", sort=\"asc\",rows=5)\n      \n# Print the result\nTruSo\n      \n\n\n\n# The Quandl Package\nlibrary(Quandl)\n\n# Here you should place the return:\nFinal <-Quandl(\"DOE/RWTC\",sort=\"asc\", transform=\"rdiff\",collapse=\"daily\", start_date=\"2005-01-01\",end_date=\"2010-03-01\")\n\n     \n      ",
+    "created" : 1454419439376.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1424838746",
+    "id" : "CB5E91F3",
+    "lastKnownWriteTime" : 1455034103,
+    "path" : "F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Quandl in R/quandl.R",
+    "project_path" : "quandl.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
