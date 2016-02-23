@@ -1,0 +1,18 @@
+{
+    "contents" : "#Sequence of characters\n#pattern existance, matching, replacement\n\n# The emails vector has already been defined for you\nemails <- c(\"john.doe@ivyleague.edu\", \"education@world.gov\", \"dalai.lama@peace.org\", \n            \"invalid.edu\", \"quant@bigdatacollege.edu\", \"cookie.monster@sesame.tv\")\n\n# Use grepl() to match for \"edu\"\ngrepl(\"edu\",emails)\n\n# Use grep() to match for \"edu\", save result to hits\nhits = grep(\"edu\", emails)\nemails[hits]\n# Subset emails using hits\nemails[hits]\n\n\n\n# The emails vector has already been defined for you\nemails <- c(\"john.doe@ivyleague.edu\", \"education@world.gov\", \"dalai.lama@peace.org\", \n            \"invalid.edu\", \"quant@bigdatacollege.edu\", \"cookie.monster@sesame.tv\")\n\n# Use grep() to match for .edu addresses more robustly\ngrep(\"@.*\\\\.edu$\",emails)\n\n# Use grepl() to match for .edu addresses more robustly, save result to hits\nhits = grepl(\"@.*\\\\.edu$\",emails)\nhits\n# Subset emails using hits\nemails[hits]\n\n\n# The emails vector has already been defined for you\nemails <- c(\"john.doe@ivyleague.edu\", \"education@world.gov\", \"dalai.lama@peace.org\", \n            \"invalid.edu\", \"quant@bigdatacollege.edu\", \"cookie.monster@sesame.tv\")\n\n# Use sub() to convert the email domains to datacamp.edu (attempt 1)\nsub(\"@.*\\\\.edu$\",\"datacamp.edu\",emails)\n\n# Use sub() to convert the email domains to datacamp.edu (attempt 2)\nsub(\"@.*\\\\.edu$\",\"@datacamp.edu\",emails)",
+    "created" : 1456120748032.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1573158024",
+    "id" : "815947BC",
+    "lastKnownWriteTime" : 1456124578,
+    "path" : "F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Intermediate R/regex.R",
+    "project_path" : "regex.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
