@@ -1,12 +1,12 @@
 {
     "contents" : "\n# Load the ggplot2 package\nlibrary(ggplot2)\n\n# Explore the mtcars data frame with str()\nstr(mtcars)\n\n# Execute the following command\nggplot(mtcars, aes(x = cyl, y = mpg)) +\n      geom_point()\n\n\n\n\n# Load the ggplot2 package\nlibrary(ggplot2)\n\n# Change the command below so that cyl is treated as factor\nggplot(mtcars, aes(x = factor(cyl), y = mpg)) +\n      geom_point()\n\n\n# A scatter plot has been made for you\nggplot(mtcars, aes(x = wt, y = mpg)) +\n      geom_point()\n\n# Replace ___ with the correct vector\nggplot(mtcars, aes(x = wt, y = mpg, col = disp, size = 100)) +\n      geom_point()\n\n# Replace ___ with the correct vector\nggplot(mtcars, aes(x = wt, y = mpg, size = disp)) +\n      geom_point()\n\n\n\n# Explore the diamonds data frame with str()\nstr(diamonds)\n\n# Add geom_point() with +\nggplot(diamonds, aes(x = carat, y = price)) + geom_point()\n\n\n# Add geom_point() and geom_smooth() with +\nggplot(diamonds, aes(x = carat, y = price)) + geom_point() + geom_smooth()\n\n",
     "created" : 1456237492652.000,
-    "dirty" : true,
+    "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "126554200",
     "id" : "BD0E9365",
-    "lastKnownWriteTime" : 1456242401,
+    "lastKnownWriteTime" : 1456244119,
     "path" : "F:/sanjana/books/CSE/Machine Learning/Data Camp/Practice/Datacamp-courses/Data Visualization with ggplot(1)/intro.R",
     "project_path" : "intro.R",
     "properties" : {

@@ -25,9 +25,22 @@ ggplot(mtcars, aes(x = wt, y = mpg)) +
       geom_point()
 
 # Replace ___ with the correct vector
-ggplot(mtcars, aes(x = wt, y = mpg, col = disp)) +
+ggplot(mtcars, aes(x = wt, y = mpg, col = disp, size = 100)) +
       geom_point()
 
 # Replace ___ with the correct vector
 ggplot(mtcars, aes(x = wt, y = mpg, size = disp)) +
       geom_point()
+
+
+
+# Explore the diamonds data frame with str()
+str(diamonds)
+
+# Add geom_point() with +
+ggplot(diamonds, aes(x = carat, y = price)) + geom_point()
+
+
+# Add geom_point() and geom_smooth() with +
+ggplot(diamonds, aes(x = carat, y = price)) + geom_point() + geom_smooth()
+
